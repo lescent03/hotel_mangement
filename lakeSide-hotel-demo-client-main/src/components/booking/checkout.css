@@ -1,0 +1,44 @@
+.highlight-container {
+    text-align: center;
+    background: linear-gradient(to right, #fce38a, #f38181); /* Màu gradient nổi bật */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite; /* Hiệu ứng nhấp nháy */
+}
+
+.highlight-container p {
+    font-size: 1.3rem; /* Phông chữ to hơn */
+    font-weight: bold;
+    color: #ffffff; /* Chữ màu trắng */
+    margin: 0;
+}
+
+.countdown {
+    font-size: 2rem; /* Phông chữ lớn hơn cho đồng hồ */
+    font-weight: bold;
+    color: #ff0000; /* Màu đỏ nổi bật */
+}
+
+.expired {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff4444; /* Màu đỏ đậm khi hết thời gian */
+    text-transform: uppercase;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
